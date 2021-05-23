@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/logo-plataforma.png" alt="Logo Alura Dev" class="cabecalho_logo">
+        <input type="text" placeholder="Busque por algo" class="cabecalho_barra-pesquisa padrao-campos">
+        <div class="cabecalho_usuario">
+            <img src="https://avatars.githubusercontent.com/u/61086348?v=4" alt="Avatar" class="cabecalho_avatar">
+            <a class="cabecalho_nick-usuario">Eduardo Silva</a>
+        </div>
+        <div class="icones">
+            <img src="img/icone-lupa.svg" alt="Ícone de pesquisa" class="icone_lupa">
+            <img src="img/icone-menu-hamburguer.svg" alt="Ícone de menu" class="icone_menu-hamburguer">
+        </div>
+    </header>
+    <main class="principal">
+        <nav class="menu">
+            <p class="textos_sessao textos">MENU</p>
+            <div class="menu_itens">
+                <img src="img/icone-editor.svg" alt="Ícone editor de código" class="menu_itens-img">
+                <a href="#">Editor de código</a>
+            </div>
+            <div class="menu_itens">
+                <img src="img/icone-comunidade.svg" alt="Ícone comunidade" class="menu_itens-img">
+                <a href="#"> Comunidade</a>
+            </div>
+        </nav>
+        <section class="codigos">
+            <div class="codigos-borda">
+                <div class="codigos_caixa-codigo">
+                    <div class="circulos">
+                        <div class="circulo c1"></div><div class="circulo c2"></div><div class="circulo c3"></div>
+                    </div>    
+                    <textarea class="codigos_texto"></textarea>
+                </div>
+            </div>
+            <div>
+                <button class="botao_visualizar">Visualizar com o highlight</button>
+            </div>
+        </section>
+        <section class="campos">
+            <p class="textos_sessao textos">SEU PROJETO</p>
+            <div class="campos_seu-projeto">
+                <input type="text" name="nome-projeto" id="nome-projeto" placeholder="Nome do seu projeto" class="campos_nome-projeto padrao-campos">
+                <textarea name="descricao-projeto" id="descricao-projeto" rows="10" placeholder="Descrição do seu projeto" class="campos_descricao padrao-campos"></textarea>
+            </div>
+            <p class="textos_sessao textos">PERSONALIZAÇÃO</p>
+            <div class="campos_personalizacao">
+                <select name="linguagem-codigo" id="linguagem-codigo" class="campos_linguagem padrao-campos">
+                    <option value="javascript" class="opcoes">JavaScript</option>
+                    <option value="python" class="opcoes">Python</option>
+                </select>
+
+                <input type="color" name="selecao-cor" id="selecao-cor" class="campos_cor">
+
+            </div>
+            <button class="botao_salvar">Salvar projeto</button>
+
+        </section>
+    </main>
+</body>
+</html>

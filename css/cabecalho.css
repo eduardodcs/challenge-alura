@@ -1,0 +1,36 @@
+.cabecalho {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.cabecalho_logo {
+    width: 200px;
+}
+
+.cabecalho_barra-pesquisa {
+    height: 2rem;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.cabecalho_usuario {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho_avatar {
+    width: 3rem;
+    border-radius: 45%;
+}
+
+.cabecalho_nick-usuario {
+    width: 4rem;
+    color: var(--branco);
+    width: auto;
+    font-family: var(--inter);
+}
